@@ -1,0 +1,38 @@
+* {
+  font-size:25px;
+  font-family: Gill-Sans, Helvetica, sans-serif;
+} 
+.nav {
+  position: relative;
+}
+
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-style:italic;
+}
+a {color:red;
+text-decoration:underline;}
+
+p:first-letter {
+  font-size: 50px;
+}
+
+.empty-para {
+  background-color:#323232;
+  color:white;
+  text-align: right;
+}
+
+.worked {
+  font-style:italic;
+}
+.really-worked {
+  font-weight:bold;
+  font-size: 35px;
+}
+span {
+  color:#FF0080;
+  font-weight: bolder;
+}
