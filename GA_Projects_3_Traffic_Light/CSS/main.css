@@ -1,0 +1,63 @@
+/*Lights*/
+.lights {
+  margin-left:50px;
+  background-color:black;
+  width:200px;
+  display: inline-block;
+  position:fixed;
+}
+
+
+.Stop {
+  width: 200px;
+  height: 200px;
+  border-radius:100%;
+  background-color:#3d3d3d ;
+}
+
+.Get-Ready {
+  width: 200px;
+  height: 200px;
+  border-radius:100%;
+  background-color:#3d3d3d;
+}
+
+.Go {
+  width: 200px;
+  height: 200px;
+  border-radius:100%;
+  background-color:#3d3d3d;
+}
+
+/* Buttons */
+.buttons {
+ display:block;
+ width: 100px;
+ height: 100px;
+ margin-left: 500px;
+ margin-bottom: 50px;
+ margin-top: 50px;
+ padding: 25px;
+ border-radius: 10%;
+ background-color: #000000;
+ font-family: "Gill-Sans","Helvetica-Neue", sans-serif;
+ font-size: 1em;
+ line-height: 100px;
+ text-align: center;
+ text-decoration:none;
+ color:#FFFFFF;
+}
+
+/* Transitions */
+.buttons:hover {
+  transition: font 0.4s ease 0s;
+  font-size: 120%;
+}
+
+.buttons:active {
+  transition: background-color font 2s ease 0s;
+  background-color:#3d3d3d;
+  font-size: 130%;
+}
+
+
