@@ -1,0 +1,77 @@
+/* HTML elements */
+body {
+  margin-left:50px;
+  margin-right: 50px;
+  font-family:'Lato', sans-serif;
+  line-height: 1.5;
+  padding-left:50px;
+  max-width:900px;
+}
+
+h1  {
+  color: #8B0000;
+  margin-bottom:-1em;
+  font-size: 2em;
+}
+
+h2 { 
+  font-weight:lighter; 
+}
+
+h3 {
+  font-weight:lighter;
+  letter-spacing: 2px;
+  font-size: 2em;
+}
+
+
+/* Classes */
+.post {
+  border-bottom:2px solid grey;
+  color:black;
+  padding-bottom:4em;
+}
+
+/* Style groups */
+.accent {
+  color:grey;
+  font-weight:lighter;
+}
+
+/* Structure IDs, psuedo-elements and smaller groups */
+
+#headnav a {
+  padding-bottom:.3em solid grey;
+  margin-right: .5em;
+  color:grey;
+}
+
+#footer
+{ margin-top: 2em;
+}
+
+    #footer a {
+    color:#8B0000;
+    }
+    #footer a+a{
+    border-left: 1px solid grey;
+    padding-left:.8em;
+    }
+
+h3.accent {
+  margin-bottom:-1em;
+}
+
+p:first-letter {
+  font-size: 400%;
+  float: left;
+  margin-right: .5em;
+  color:grey;
+}
+
+span {
+  color: #8B0000;
+  float:right;
+  font-weight: bold;
+  margin-top:1em;
+}
