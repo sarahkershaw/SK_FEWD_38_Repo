@@ -1,73 +1,53 @@
-/*Lights*/
-.lights {
-  margin-left:50px;
-  background-color:black;
-  border-radius:15px;
-  width:200px;
-  display: inline-block;
+.trafficLights {
+  border-radius: 10px;
+  background-color: black;
+  width: 250px;
+  height: 700px;
   float:left;
-  margin-bottom: 10px;
-  padding-top: 20px;
+  margin-left: 150px;
 }
 
-
-.Stop {
+.lightBulbs {
   width: 200px;
   height: 200px;
-  border-radius:100%;
-  background-color:#3d3d3d ;
+  border-radius: 100px;
+  background-color: #3d3d3d;
+  margin: 25px;
+  transition: background-color .5s ease-out
 }
 
-.Get-Ready {
-  width: 200px;
-  height: 200px;
-  border-radius:100%;
-  background-color:#3d3d3d;
+.allButtons {
+  max-width: 120px;
+  float: left;
+  margin-left: 30px;
+  margin-top: 20px;
 }
 
-.Go {
-  width: 200px;
-  height: 200px;
-  border-radius:100%;
-  background-color:#3d3d3d;
+.allButtons p {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #1d1d2d;
+  padding: 25px;
+  color:white;
+  text-decoration:none;
+  font-family: Helvetica, sans-serif;
+  margin-left: 25px;
+  height: 100px;
+  line-height: 100px;
+  width: 100px;
+  border-radius: 12px;
+  text-align:center;
+  font-size: 1em;
 }
 
-/* Buttons */
-
-.all-buttons {
-  max-width: 150px;
-  display:inline-block;
-  margin-left: 100px ;
-  cursor:pointer;
-}
-
-.all-buttons a {
- margin-top: 25px;
- margin-bottom: 50px;
- float:left;
- width: 100px;
- height: 100px;
- padding: 15px;
- border-radius: 10%;
- background-color: #000000;
- font-family: "Gill-Sans", sans-serif;
- font-size: 1em;
- line-height: 100px;
- text-align: center;
- text-decoration:none;
- color:#FFFFFF;
- }
-
-/* Transitions */
-.all-buttons a:hover {
-  transition: font 0.4s ease 0s;
+.allButtons p:hover {
+  transition: font-size 0.3s ease 0s;
   font-size: 115%;
+   cursor:pointer;
 }
 
-.all-buttons a:active {
-  transition: background-color font 2s ease 0s;
-  background-color:#2d2d2d;
+.allButtons p:active {
+  transition: font-size,opacity, 1s ease 0s;
   font-size: 130%;
+  opacity: 0.1;
 }
-
-
