@@ -4,10 +4,18 @@ nav {
 	color: #1d1d2d;
 }
 
-.imageMain {
-	width: 200px;
-	height: 200px;
-	border: 2px solid black;
+.imageViewer{
+	width: 900px;
+	height: 450px;
+	background-color:grey;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.thumbNails {
+	width: 100px;
+	height: 100px;
+	border: 2px solid grey;
 	background-color: grey;
 	display: inline-block;
 }
