@@ -1,0 +1,13 @@
+nav {
+	font-family: "Helvetica";
+	font-size: 1.5em;
+	color: #1d1d2d;
+}
+
+.imageMain {
+	width: 200px;
+	height: 200px;
+	border: 2px solid black;
+	background-color: grey;
+	display: inline-block;
+}
