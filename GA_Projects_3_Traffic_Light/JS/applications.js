@@ -1,13 +1,13 @@
 function buttonClick(color) {
   
-  var orange=document.getElementById("orangeLight");
-  var green=document.getElementById("goLight");
-  var red=document.getElementById("stopLight");
+  var orangeLight = document.getElementById("orange");
+  var greenLight = document.getElementById("green");
+  var redLight = document.getElementById("red");
   
-  orange.style.backgroundColor="#3d3d3d";
-  green.style.backgroundColor="#3d3d3d";
-  red.style.backgroundColor="#3d3d3d";
+  orangeLight.style.backgroundColor = "#3d3d3d";
+  greenLight.style.backgroundColor="#3d3d3d";
+  redLight.style.backgroundColor="#3d3d3d";
   
-  var light=document.getElementById(color);
+  var light = document.getElementById(color);
   light.style.backgroundColor = color;
 }
