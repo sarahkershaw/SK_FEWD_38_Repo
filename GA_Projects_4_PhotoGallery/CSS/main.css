@@ -1,21 +1,25 @@
-nav {
-	font-family: "Helvetica";
-	font-size: 1.5em;
-	color: #1d1d2d;
+.thumbNails {
+	width: 250px;
+	height: 250px;
+	background-color: grey;
+	display: inline-block;
+	position:relative;
+	overflow:hidden;
 }
 
 .imageViewer{
-	width: 900px;
-	height: 450px;
+	width: auto;
+	height: 100%;
 	background-color:grey;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	margin-left:0px;
 }
 
-.thumbNails {
-	width: 100px;
-	height: 100px;
-	border: 2px solid grey;
-	background-color: grey;
-	display: inline-block;
+#nav {
+	font-family: "Gill-Sans", Helvetica, sans-serif;
+	font-size: 1.5em;
+	color: #1d1d2d;
+	float:right;
+	position:fixed;
 }

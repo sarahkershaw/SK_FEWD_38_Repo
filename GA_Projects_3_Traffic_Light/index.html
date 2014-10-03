@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="CSS/main.css"/>
-	<script type="text/javascript" src="js/applications.js"></script>
+  <link rel="stylesheet" type="text/css" href="CSS/main.css"/>
+  <script type="text/javascript" src="js/applications.js"></script>
 </head>
 <body>
     <div class="allButtons">
-    <p id="stopButton" onclick="buttonClick('red')">Stop</p>
-    <p id="amberButton" onclick="buttonClick('orange')">Get Ready</p>
-    <p id="goButton" onclick="buttonClick('green')">Go</p>
+      <button id="stopButton" onclick="buttonClick('red')">Stop</button> 
+      <button id="amberButton" onclick="buttonClick('orange')">Get Ready</button> 
+      <button id="goButton" onclick="buttonClick('green')">Go</button> 
     </div>
 
     <div class="trafficLights">
-      <h1 id="stopLight" class="lightBulbs"></h1>
-      <h1 id="orangeight" class="lightBulbs"></h1>
-      <h1 id="goLight" class="lightBulbs"></h1>
+      <div id="red" class="lightBulbs"></div> 
+      <div id="orange" class="lightBulbs"></div> 
+      <div id="green" class="lightBulbs"></div> 
     </div>
 </body>
 </html>
-
   
