@@ -1,35 +1,36 @@
-var stuff = ["apples", "oranges", "kumquats"];
-//$.each(stuff, function (){})
-//$.each(variable name, function(){})
-// function in this eg is without a name. In JS functions are named so they can be called on elsewhere. In JQuery, 
-//this is an anonymous function because it will be called immediately. 
-//this function can therefore only be used once. It can only be called in this sequence. 
-$.each(stuff/function(index,value){
- console.log(value.length);
-})
-//this will return a value of 0 for the index and "apples", 1 and "oranges", 2 and "kumpquats"
+var playerChoice = "";
+var computerChoice = "";
+var outcome = "";
+
+function reset(){
+playerChoice = “”;
+computerChoice = “”;
+var outcome = “”;
+};
+
+function clickRock(){    
+var paper = 3;
+var rock = 2;
+var scissors = 1;
+};
 
 
-// JQuery - .val 
-var fruit = "apples";
-$("#food").val(fruit);
+If(playerChoice==rock){
+    computerChoice!==rock);
+                        }
+else if(computerChoice==paper){
+    var rockOutcome=paper>rock>scissors;
+    alert("Hulk wins. Sad face. But at least he's not getting angry");
+};
+    else if(computerChoice===scissors){;
+        alert("you win! but the hulk might get upset");
+    }
 
-// The JS equivalent of this is document.getElementById('food'). text = fruit;
+ function clickScissors(){
+
+ }
 
 
-var fruit = "apples";
-$(document).ready(function(){
-$("#food").val(fruit);
-});
+ function clickPaper(){
 
-//document.ready(function(){
-//init()''
-//})
-//document - going to document, when it is ready, when everything has been loaded. 
-
-function init() {
-$.("#food").val(fruit);
-}
-// init is a common method name for when you are calling the application. 
-//When document is ready, initialise the application so we know it's ready. 
-
+ }
