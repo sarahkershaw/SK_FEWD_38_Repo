@@ -1,15 +1,27 @@
+<!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="CSS/main.css"/>
 <script type ="text/javascript" src=js/jquery.js></script>
 <script type ="text/javascript" src=js/main.js></script>
 <title>Rock, Paper, Scissors: what'll it be campers?</title>
 </head>
 <body>
 	<h1>Rock, Paper, Scissors with the incredible hulk</h1>
-        <div class="gameOptions">
-            <button id="rock" onclick="clickRock()">rock</button>
-            <button id="paper">paper</button>
-            <button id="scissors">scissors</button>
-        </div>
-</body
+
+    <div class="playerChoice">
+        <h3> Your Choice </h3>
+		        <button id="playerRock" onclick="userChoice('rock')">rock</button>
+		        <button id="playerPaper" onclick="userChoice('paper')">paper</button>
+		        <button id="playerScissors" onclick="userChoice('scissors')">scissors</button>
+	</div>
+
+    <div class="hulkChoice">
+        <h3> Hulk's Choice </h3>
+
+	        <input type="image" id="hulkRock" src="Images/rock.jpg" />
+	        <input type="image" id="hulkPaper" src="Images/paper.jpg" />
+	        <input type="image" id="hulkScissors" src="Images/scissors.jpg" />
+    </div>
+</body>
 </html>
