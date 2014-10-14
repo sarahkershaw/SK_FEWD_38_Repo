@@ -1,0 +1,75 @@
+body {
+	font-family: Gill Sans, Helvetica, sans-serif;
+	margin-left: 40px;
+}
+nav {
+	display:inline;
+	padding: 30px;
+	background-color: #BEDDEA;
+	font-size: 1.5em;
+	width: auto;
+}
+
+nav a {
+	color: white;
+}
+
+#main {
+	float:left;
+}
+
+h1 {
+	font-weight:normal;
+	padding-top: 30px;
+	font-size: 2em;
+}
+
+h2
+{
+	font-style:italic;
+	color: #4d4d4d;
+	font-weight:normal;
+	margin-top: -15px;
+	margin-bottom:-5px;
+}
+h3
+{color:#4d4d4d;
+	font-weight: normal;
+	font-size: 1em;
+	font-style: italic;
+}
+
+
+#explainer{
+	max-width: 550px;
+	text-align:justify;
+}
+
+button {
+	background-color: #FF0000;
+	color:white;
+	border-radius: 15%;
+	padding: 15px;
+	display:inline-block;
+	font-size: 1.5em;
+	margin-left: 20px;
+	line-height: 100%;
+	cursor:pointer;
+	transition: font-size opacity 1s ease 1s;
+}
+
+button:active {
+	font-size: 120%;
+	opacity: 0.5;
+
+}
+#slideShow img{
+	background-color: #5d5d5d;
+	width: 550px;
+	height: 300px;
+}
+
+.addressField {
+	font-size: 1em;
+	margin-left: 10px;
+}
