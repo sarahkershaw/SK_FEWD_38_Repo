@@ -1,34 +1,37 @@
 var userWins = ["rockscissors", "paperrock", "scissorspaper"];
 var outComeMsg = "Hulk Smash! You loose.";
+var hulkChoice;                     // By setting hulkChoice as a global variable, you can access it from inside of evaluate(userPick);
 
 function userChoice(choice){
-    evaluate(choice);
+  setHulkChoice();
+  evaluate(choice);
 }
 
-var hulkChoice = Math.random();
+function setHulkChoice(){           // By wrapping this in a function, each time the function is called, 'hulkChoice' will be reset. Otherwise, it'll always contain the value it was assigned initially
+  hulkChoice = Math.random();
 
-if (hulkChoice < 0.34) {
+  if (hulkChoice < 0.34) {
     hulkChoice = "rock";
-} else if (hulkChoice <= 0.67 >= 0.35) {
+  } else if (hulkChoice <= 0.67) {
     hulkChoice = "paper";
-} else {
+  } else {
     hulkChoice = "scissors";
+  }
 }
-
 
 function evaluate(userPick) {
-    if (userPick == hulkChoice) {
-    outComeMsg="it's a tie! He may not relish this...";
-    } else {
+  if (userPick == hulkChoice) {
+    outComeMsg = "it's a tie! He may not relish this...";
+  } else {
     var outCome = userPick + hulkChoice;
 
-        $.each(userWins, function (index, value) {
-        if (outCome == value) {
-            outComeMsg="You win, but Hulk might get angry. Run.";
-        }
+    $.each(userWins, function (index, value) {
+      if (outCome == value) {
+        outComeMsg = "You win, but Hulk might get angry. Run.";
+      }
     });
-    }
-    alert(outComeMsg);
+  }
+  alert(outComeMsg);
 }
 
   /*I tried to add the following line of code to line 21: alert("Hulk has picked "+ hulkChoice);
