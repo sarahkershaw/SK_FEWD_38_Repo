@@ -1,10 +1,15 @@
 .thumbNails {
-	width: 250px;
-	height: 250px;
+	width: 150px;
+	height: 150px;
 	background-color: grey;
 	display: inline-block;
 	position:relative;
 	overflow:hidden;
+}
+
+
+.thumbnails img {
+	width:100%;
 }
 
 .imageViewer{
