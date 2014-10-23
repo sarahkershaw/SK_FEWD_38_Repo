@@ -1,36 +1,36 @@
 <!doctype html>
 <head>
-<title>Rubbish Sucks</title>
+<title>Rubbish Sucks: no-one likes looking at rubbish</title>
 	<script type ="text/javascript" src=js/jquery.js></script>
 	<script type ="text/javascript" src=js/main.js></script>
-	<link ref="http://ufonts.com/q27859" rel="stylesheet" type="text/css"/>
+	<link rel="http://ufonts.com/q27859" rel="stylesheet" type="text/css"/>
 	<link rel="stylesheet" type="text/css" href="css/main.css"/>
 </head>
 
 <body>
-	<div id="apiResultImage">
+	<div id="apiResultImage" onloadeddata="displayImage('imageOptions')">
 			<div id="headerNav">
 			<nav><a href="http://sarahkershaw.com">Home</a></nav>
 			<nav><a href="http://sarahkershaw.com/moi">Say hello</a></nav>
 			<nav><a href="http://sarahkershaw.com/projects">Other Projects</a></nav>
 			</div>
-	<img src="images/image_0_nocollection.jpg" width="85%" alt title="No Recycling or Rubbish Collection today"/>
+			<img src="images/image_0_nocollection.jpg" alt title="No Recycling or Rubbish Collection today"/>
 	</div>
+
+	<div class="textHeaders">
 		<h1>Chelsea: Rubbish & Recycling Hack</h1>
 		<h2>because no-one likes looking at rubbish</h2> 
+	</div>
 
-		<div onloadeddata="displayImage('imageOptions')">
-		<p>Check what the city of New York is saying (real time!)</p>
-		<button onclick="get311Data">Check what New York is saying!</button>
+	<div>
 		<p id="apiResult"></p>
-		</div>
 	</div>
 
 	<div id="apiOptionsSlideshow">
-		<img class="thumbNails"src="images/image_0_nocollection.jpg"/>
-		<img class="thumbNails"src="images/image_1_recyclingcollection.jpg"/>
-		<img class="thumbNails"src="images/image_2_regulartrashblackwhitebags.jpg"/>
-		<img class="thumbNails"src="images/image_3_collectionexception.jpg"/>
-		</div>
+		<img class="thumbNails" onloadeddata="displayImage(0)" src="images/image_0_nocollection.jpg" alt title="No Recycling or Rubbish Collection today"/>
+		<img class="thumbNails" onloadeddata="displayImage(1)"src="images/image_1_recyclingcollection.jpg" alt title="Recycling and Regular Trash Collection"/>
+		<img class="thumbNails" onloadeddata="displayImage(2)"src="images/image_2_regularblackwhitebags.jpg" alt title="Just Regular Trash Collection"/>
+		<img class="thumbNails" onloadeddata="displayImage(3)"src="images/image_3_collectionexception.jpg" alt title="Collection Exception - collection cancelled for reasons unknown"/>
 	</div>
+
 	

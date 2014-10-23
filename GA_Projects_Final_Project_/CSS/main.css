@@ -1,6 +1,6 @@
 body {
 	font-family: Gill Sans, Helvetica, sans-serif;
-	width:900px;
+	max-width: 1200px;
 }
 
 #headerNav{
@@ -35,15 +35,9 @@ h2 {
 	margin-bottom: 5px;
 }
 
-button {
-	padding: 20px;
-	border-radius: 15px;
-	background-color:red;
-	color:white;
-}
 
 #apiResultImage img {
-	border-radius:15%;
+	
 }
 
 #apiOptionsSlideshow .thumbNails {
