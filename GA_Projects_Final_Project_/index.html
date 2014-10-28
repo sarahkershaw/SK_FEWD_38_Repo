@@ -1,6 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 <head>
-<title>Rubbish Sucks: no-one likes looking at rubbish</title>
+<title>Rubbish Sucks: Trash and Recycling Schedule for Chelsea, NYC</title>
 	<script type ="text/javascript" src=js/jquery.js></script>
 	<script type ="text/javascript" src=js/main.js></script>
 	<link rel="http://ufonts.com/q27859" rel="stylesheet" type="text/css"/>
@@ -8,29 +8,77 @@
 </head>
 
 <body>
-	<div id="apiResultImage" onloadeddata="displayImage('imageOptions')">
-			<div id="headerNav">
-			<nav><a href="http://sarahkershaw.com">Home</a></nav>
-			<nav><a href="http://sarahkershaw.com/moi">Say hello</a></nav>
-			<nav><a href="http://sarahkershaw.com/projects">Other Projects</a></nav>
-			</div>
-			<img src="images/image_0_nocollection.jpg" alt title="No Recycling or Rubbish Collection today"/>
+    <nav id="headerNav">
+       <a name="Home" href="http://sarahkershaw.com/moi">say hello</a>
+       <a href="#About">about</a>
+       <a href="#Tips">tips</a>
+    </nav>
+	
+    <div class="textHeaders">
+	   <h1>Chelsea: Rubbish & Recycling Schedule</h1>
+	   <h2><span>because no-one likes looking at rubbish</span></h2>
+       <p> Instructions: the image below tells you what you need to do with your rubbish in real-time. That's it!
+       No input required. As you were. Carry on with your day. </p>
 	</div>
 
-	<div class="textHeaders">
-		<h1>Chelsea: Rubbish & Recycling Hack</h1>
-		<h2>because no-one likes looking at rubbish</h2> 
-	</div>
+    <div>
+	   <img id="apiResultImage" src="images/image_0_nocollection.jpg" alt title="No Recycling or Rubbish Collection today"/>
+    </div>
 
 	<div>
-		<p id="apiResult"></p>
+	   <p id="apiResult"></p>
 	</div>
+        
+    <div class="explainer">
+        <div id="col1about">
+            <img class="explainerIcons" src="images/about.jpg" alt text="About"/>
+            <a name="About">About</a>
+            <p> 
+            This web app is designed to provide an instant summary of the recycling and trash status for Chelsea, Manhattan, based on the existing schedule but also factoring in data from the city's 311 API, which automatically updates on page load. <br>The theory is that by checking this residents can know instantly what is happening and we can minimise the piles of rubbish that build up when schedules change, due to bad weather, or the apocalypse. 
+            </p>
+        </div>
 
-	<div id="apiOptionsSlideshow">
-		<img class="thumbNails" onloadeddata="displayImage(0)" src="images/image_0_nocollection.jpg" alt title="No Recycling or Rubbish Collection today"/>
-		<img class="thumbNails" onloadeddata="displayImage(1)"src="images/image_1_recyclingcollection.jpg" alt title="Recycling and Regular Trash Collection"/>
-		<img class="thumbNails" onloadeddata="displayImage(2)"src="images/image_2_regularblackwhitebags.jpg" alt title="Just Regular Trash Collection"/>
-		<img class="thumbNails" onloadeddata="displayImage(3)"src="images/image_3_collectionexception.jpg" alt title="Collection Exception - collection cancelled for reasons unknown"/>
-	</div>
+        <div id="col2tips">
+            <img src="images/tips.jpg" class="explainerIcons" alt text="Tips on Rubbish Presentation"/>
+            <a name="Tips">Tips on Rubbish Presentation</a>
+            <h5>AKA presentation rules to avoid fines</h5>
+            <li>Regular Rubbish: household</li>
+            <ul>
+                    <li><a href="http://www.amazon.com/Black-Gallon-Trash-Bags-Case/dp/B005N9T036">black trash bags</a> or 
+                     <a href="http://www.amazon.com/Glad-Kitchen-Drawstring-Trash-Gallon/dp/B00112PKGU/ref=sr_1_5?s=lawn-garden&ie=UTF8&qid=1414433974&sr=1-5&keywords=white+trash+bags">white trash bags</a></li>
+            </ul>
 
+            <li> Recycling: plastic, glass, cardboard</li>
+             <ul>
+                    <li> <a href="http://www.amazon.com/Presto-GKL032613-Bilt-Tuf-Kitchen-Clear/dp/B005CI38JK/ref=sr_1_1?s=lawn-garden&ie=UTF8&qid=1414434040&sr=1-1&keywords=clear+trash+bags">clear plastic bags</a> or  <a href="http://www.amazon.com/Blue-Recycling-Bags-33x39-case/dp/B0017TLBCO/ref=sr_1_2?s=lawn-garden&ie=UTF8&qid=1414434093&sr=1-2&keywords=blue+trash+bags">blue plastic bags</a></li> 
+             </ul>  
+
+             <li>Cardboard can be collected as follows *</li>
+                <ul>
+                    <li>collapsed boxes neatly stacked inside a cardboard box (meta!)</li>
+                    <li>collapsed boxes tied together with string</li>
+                    <li>collapsed boxes in the regulation blue or clear plastic bag</li>
+                </ul> 
+
+            <span>* I know, I know. It's very particular. </span>
+             </ul>
+        </div>
+
+        <div id="footer">
+            <a href="#Top">Home</a>
+            <a href="http://sarahkershaw.com/moi">say hello</a>
+            <a href="#About">about</a>
+            <a href="#Tips">tips</a>
+
+        </div>
+        
+        <div id="apiOptionsSlideshow">
+            <img class="thumbNails"  src="images/image_0_nocollection.jpg"  width="50"px height="50"px alt title="No Recycling or Rubbish Collection today"/>
+            <img class="thumbNails" src="images/image_1_recyclingcollection.jpg" width="50"px height="50"px alt title="Recycling and Regular Trash Collection"/>
+            <img class="thumbNails" src="images/image_2_regularcollectionblackwhitebags.jpg" width="50"px height="50"px alt title="Just Regular Trash Collection"/>
+            <img class="thumbNails" src="images/image_3_collectionexception.jpg" width="50"px height="50"px alt title="Collection Exception - collection cancelled for reasons unknown"/>
+        </div>
+    </div>
+</body>
+</html>
 	
