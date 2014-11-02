@@ -30,7 +30,7 @@ function displayImage(data){
 	var day = d.getDay();
 	var hour = d.getHours();
 	//hour = 20;
-	//day = 4;
+	//day = 1;
 	//status="ON SCHEDULE";
 
 	var img=document.getElementById('apiResultImage');
