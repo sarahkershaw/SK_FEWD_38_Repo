@@ -9,57 +9,66 @@
 
 <body>
     <div id="navImg">
-    <img src="images/Nav_Header.jpg" alt title="Chelsea, NYC, Garbage and Recycling Schedule header image"/>
+          <img src="images/Nav_Header.jpg" alt title="Chelsea, NYC, Garbage and Recycling Schedule header image"/>
     </div>
+
     <nav id="headerNav">
-       <a name="Home" href="http://sarahkershaw.com/moi">say hello</a>
-       <a href="#About">about</a>
-       <a href="#Tips">tips</a>
-       <a href="#Map">coverage area</a>
-       <a href="#Schedule">schedule</a>
+          <button><a name="Home" href="http://sarahkershaw.com/moi">say hello</a></button>
+          <button> <a href="#thelogic">the logic</a></button>
+          <button><a href="#Tips">tips</a></button>
+          <button> <a href="#Map">coverage area</a></button>
+          <button> <a href="#Schedule">schedule</a></button>
     </nav>
 	
     <div class="textHeaders">
-	   <h1>Chelsea Rubbish & Recycling Schedule: <span>because no-one likes looking at rubbish</span></h1>
+	    <h1>Chelsea Rubbish & Recycling Schedule: <span>because no-one likes looking at rubbish</span></h1>
 	  
-       <p> Instructions: the image below tells you what you need to do with your rubbish in real-time. That's it!
-       No input required. As you were. Carry on with your day. </p>
+          <p> Instructions: the image below tells you what you need to do with your rubbish in real-time. That's it! No input required. As you were. Carry on with your day. </p>
 	</div>
 
     <div>
-	   <img id="apiResultImage" src="images/image_0_nocollection.jpg" alt title="No Recycling or Rubbish Collection today"/>
+	    <img id="apiResultImage" src="images/image_0_nocollection.jpg" alt title="No Recycling or Rubbish Collection today"/>
     </div>
 
 	<div>
-	   <p id="apiResult"></p>
+	    <p id="apiResult"></p>
 	</div>
         
     <div class="explainers">
-       
-        <div id="col3map">
-           <button><a name="Map"/>Map</button> CORRECT IMAGE LINK 
-            <img src="images/Chelsea_Clinton_Rubbish_Collection_Area.png" alt text="Chelsea & Clinton New York: Recycling and Trash Collection Coverage Area  a href="https://www.google.com/maps/@40.7507659,-73.992126,14z/data=!4m2!6m1!1szqQA4_6byCzo.kff5yar42-1M?hl=en"/a>
-        </div>
+     <div id="row1">       
+        <div id="col2map">
+           <button><a name="Map"/>Map</button>
+           <p> Covering 14th and 6th avenue, to Columbus Circle at 59th Street. Extending West to the Hudson river. </p>
+            <a href="https://www.google.com/maps/@40.7507659,-73.992126,14z/data=!4m2!6m1!1szqQA4_6byCzo.kff5yar42-1M?hl=en" target="_blank"><img src="images/Chelsea_Clinton_Rubbish_Collection_Area.png"></a>
+          </div>
 
-        <div id="col4schedule">
+        <div id="col1schedule">
             <button><a name="Schedule"/>Schedule</button>
-            Monday & Wednesday: household rubbish
-            Friday: household rubbish and recycling
+               <p> Monday:     <span>household rubbish <br></span>
+               Tuesday:    no collection <br>
+               Wednesday:  <span>household rubbish <br></span>
+               Thursday:   no collection <br>
+               Friday:     <span>household rubbish and recycling <br> </span>
+               Saturday:   no collection <br>
+               Sunday:     no collection <br> </p>
+          </div>
         </div>
+    </div>
 
-        <div id="col2tips">
+    <div id="row2">
+        <div id="col4tips">
           
             <button><a name="Tips">Tips on Rubbish Presentation</a></button>
             <h5>AKA presentation rules to avoid fines</h5>
             <li>Regular Rubbish: household</li>
             <ul>
-                    <li><a href="http://www.amazon.com/Black-Gallon-Trash-Bags-Case/dp/B005N9T036">black trash bags</a> or 
-                     <a href="http://www.amazon.com/Glad-Kitchen-Drawstring-Trash-Gallon/dp/B00112PKGU/ref=sr_1_5?s=lawn-garden&ie=UTF8&qid=1414433974&sr=1-5&keywords=white+trash+bags">white trash bags</a></li>
+                    <li><a href="http://www.amazon.com/Black-Gallon-Trash-Bags-Case/dp/B005N9T036" target="_blank">black trash bags</a> or 
+                     <a href="http://www.amazon.com/Glad-Kitchen-Drawstring-Trash-Gallon/dp/B00112PKGU/ref=sr_1_5?s=lawn-garden&ie=UTF8&qid=1414433974&sr=1-5&keywords=white+trash+bags" target="_blank">white trash bags</a></li>
             </ul>
 
             <li> Recycling: plastic, glass, cardboard</li>
              <ul>
-                    <li> <a href="http://www.amazon.com/Presto-GKL032613-Bilt-Tuf-Kitchen-Clear/dp/B005CI38JK/ref=sr_1_1?s=lawn-garden&ie=UTF8&qid=1414434040&sr=1-1&keywords=clear+trash+bags">clear plastic bags</a> or  <a href="http://www.amazon.com/Blue-Recycling-Bags-33x39-case/dp/B0017TLBCO/ref=sr_1_2?s=lawn-garden&ie=UTF8&qid=1414434093&sr=1-2&keywords=blue+trash+bags">blue plastic bags</a></li> 
+                    <li> <a href="http://www.amazon.com/Presto-GKL032613-Bilt-Tuf-Kitchen-Clear/dp/B005CI38JK/ref=sr_1_1?s=lawn-garden&ie=UTF8&qid=1414434040&sr=1-1&keywords=clear+trash+bags" target="_blank">clear plastic bags</a> or  <a href="http://www.amazon.com/Blue-Recycling-Bags-33x39-case/dp/B0017TLBCO/ref=sr_1_2?s=lawn-garden&ie=UTF8&qid=1414434093&sr=1-2&keywords=blue+trash+bags" target="_blank">blue plastic bags</a></li> 
              </ul>  
 
              <li>Cardboard can be collected as follows *</li>
@@ -72,20 +81,19 @@
             <span>* I know, I know. It's very particular. </span>
              </ul>
         </div>
-          <div id="col1about">
+
+          <div id="col3about">
            
-            <button><a name="About">About</a></button>
-            <p> This web app is designed to provide an instant summary of the recycling and trash status for Chelsea, Manhattan, based on the existing schedule but also factoring in data from the city's 311 API, which automatically updates on page load. <br>The theory is that by checking this residents can know instantly what is happening and we can minimise the piles of rubbish that build up when schedules change, due to bad weather, or the apocalypse. 
+            <button><a name="thelogic">The Logic</a></button>
+            <p> This web app is designed to provide an instant summary of the recycling and trash status for the Chelsea & Clinton areas of Manhattan, based on the existing schedule but also factoring in data from the city's 311 API, which automatically updates on page load. <br>The theory is that by checking this residents can know instantly what is happening and we can minimise the piles of rubbish that build up when schedules change, due to bad weather, or the apocalypse. 
             </p>
-        </div>
+            </div>
        </div>
     </div>
-        <!--<div id="apiOptionsSlideshow">
-            <img class="thumbNails"  src="images/image_0_nocollection.jpg"  width="50"px height="50"px alt title="No Recycling or Rubbish Collection today"/>
-            <img class="thumbNails" src="images/image_1_recyclingcollection.jpg" width="50"px height="50"px alt title="Recycling and Regular Trash Collection"/>
-            <img class="thumbNails" src="images/image_2_regularcollectionblackwhitebags.jpg" width="50"px height="50"px alt title="Just Regular Trash Collection"/>
-            <img class="thumbNails" src="images/image_3_collectionexception.jpg" width="50"px height="50"px alt title="Collection Exception - collection cancelled for reasons unknown"/>
-        --!>
+</div>
+    <nav id="footerNav">
+    <a href="#Home"><img src="images/footer_arrow.png"/></a>
+    </nav>
         
 </body>
 </html>

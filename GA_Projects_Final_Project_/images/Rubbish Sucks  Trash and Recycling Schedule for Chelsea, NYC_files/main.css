@@ -20,16 +20,18 @@ a {
 }
 
 a:hover {
-	font-size: 1.3em;
+	background-color:#ff3300;
+	color:white;
 }
 
 a:active {
-	font-size:1.4em;
+	background-color:#ff3333;
+	color:white;
+}
+a:visited {
+	color:white;
 }
 
-a:visited {
-	color:inherit;
-}
 #navImg {
 	width:100%;
 	text-align: center;
@@ -43,15 +45,15 @@ height: 50px;
 width: 20%;
 display:inline-block;
 cursor:pointer;
-background-color: #ff3333;
-transition: opacity 0s ease 0s;
+color:#ff3333;
+background-color:#cccccc;
+transition: font-size 0s ease 0s;
 padding: 5px;
 line-height: 100%;
 }
 
 #headerNav button a {
 	text-decoration: none;
-
 }
 
 #apiResultImage {
@@ -85,25 +87,22 @@ button {
 	width: 100%;
 	background-color: #FF3333;
 	background-repeat: no-repeat;
+	border: 5px solid #F2F2F1;
 	float: left;
+	border-radius:10%;
 	font-size:1.25em;
 	display:block;
 }
 
-#col1schedule, #col2map, #col3about, #col4tips {
+#col1about, #col2tips, #col3map, #col4schedule {
 	transition: opacity 1s ease 0s;
 	opacity:0.75;
-	width:45%;
-	padding: 2%;
+	width:37%;
+	padding: 3%;
 	display:inline-block;
 	color: #3d3d3d;
 }
 
-#col2map img {
-	margin-left:auto;
-	margin-right:auto;
-	display:block;
-}
 
 #row1, #row2 {
 	border-top: 2px solid #5d5d5d;
@@ -111,46 +110,47 @@ button {
 	margin-right:auto;
 }
 
-#col1schedule, #col3about {
+#col4schedule, #col1about {
 	display:inline-block;
 	float:left;
 }
 
 
 /* hovers */
-#col3about:hover{
-	opacity:1.3;	
-}
-
-#col4tips:hover {
+#col1about:hover{
 	opacity:1.3;
+	background-color:#cccccc;
+	
 }
 
-#col2map:hover {
+#col2tips:hover {
 	opacity:1.3;
+	background-color:#cccccc;
+	
 }
 
-#col1schedule:hover{
+#col3map:hover {
 	opacity:1.3;
-	}	
-
-#footerNav img {
-	margin-right:auto;
-	margin-left:auto;
-	display:block;
-	cursor:pointer;
+	background-color:#cccccc;
+	
 }
 
+#col4schedule:hover{
+	opacity:1.3;
+	background-color:#cccccc;
+	
+}
+/* hovers */
 
 /* media queries */
 
 @media screen and (max-width: 640px) {
  
- #col3about, #col1schedule {
+ #col1about, #col4schedule {
     display: block; 
   }
   
-  #col2map,#col4tips, #col1schedule, #col3about {
+  #col3map,#col2tips, #col4schedule, #col1about {
     width: 100%; 
   }
 
