@@ -3,6 +3,7 @@ body {
 	font-family: Gill Sans, Helvetica, sans-serif;
 	width:auto;
 	color: #3d3d3d;
+	margin-right:20px;
 }
 
 h1 {
@@ -12,7 +13,7 @@ h1 {
 
 p {
 	font-size: 1.25em;
-	text-align:center;
+	text-align:justify;
 }
 
 a {
@@ -20,11 +21,11 @@ a {
 }
 
 a:hover {
-	font-size: 1.3em;
+	font-size: 1.27em;
 }
 
 a:active {
-	font-size:1.4em;
+	font-size:1.29em;
 }
 
 a:visited {
@@ -47,11 +48,11 @@ background-color: #ff3333;
 transition: opacity 0s ease 0s;
 padding: 5px;
 line-height: 100%;
+border-radius: 5px;
 }
 
 #headerNav button a {
 	text-decoration: none;
-
 }
 
 #apiResultImage {
@@ -86,6 +87,7 @@ button {
 	background-color: #FF3333;
 	background-repeat: no-repeat;
 	float: left;
+	border-radius:5px;
 	font-size:1.25em;
 	display:block;
 }
@@ -149,7 +151,7 @@ button {
  #col3about, #col1schedule {
     display: block; 
   }
-  
+
   #col2map,#col4tips, #col1schedule, #col3about {
     width: 100%; 
   }
@@ -159,5 +161,9 @@ button {
   }
   #navImg img{
   	width: 100%;
+  }
+
+  #headerNav button a {
+  	font-size:.75em;
   }
 }
